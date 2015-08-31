@@ -8,6 +8,7 @@
 namespace apaoww\oci8;
 
 //use yii\base\Object;
+use yii\db\Expression;
 
 /**
  * ColumnSchema class describes the metadata of a column in a database table.
