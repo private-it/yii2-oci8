@@ -7,7 +7,6 @@
 
 namespace apaoww\oci8;
 
-//use yii\base\Object;
 use yii\db\Expression;
 
 /**
@@ -37,8 +36,9 @@ class ColumnSchema extends \yii\db\ColumnSchema
         }
         switch ($this->phpType) {
             case 'resource':
-            case 'string':
                 return is_resource($value) ? $value : (string) $value->load();//oracle clob need this
+            case 'string':
+                return is_object($value) ? (string) $value->load() : $value;//oracle clob need this
             case 'integer':
                 return (int) $value;
             case 'boolean':
