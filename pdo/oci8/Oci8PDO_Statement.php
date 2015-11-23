@@ -130,9 +130,9 @@ class Oci8PDO_Statement extends PDOStatement
     	}
     	
     	if($fetch_style === PDO::FETCH_ASSOC) {
-    		$result = oci_fetch_array($this->_sth, OCI_ASSOC);
+    		$result = oci_fetch_array($this->_sth, OCI_ASSOC+OCI_RETURN_NULLS);
     	} elseif($fetch_style === PDO::FETCH_NUM) {
-    		$result = oci_fetch_array($this->_sth, OCI_NUM);
+    		$result = oci_fetch_array($this->_sth, OCI_NUM+OCI_RETURN_NULLS);
     	} elseif($fetch_style === PDO::FETCH_BOTH) {
     		throw new PDOException('PDO::FETCH_BOTH is not implemented for Oci8PDO_Statement::fetch()');
     	} elseif($fetch_style === PDO::FETCH_BOUND) {
