@@ -1,13 +1,13 @@
 {
-    "name": "apaoww/yii2-oci8",
-    "description": "Oci8 Driver for Yii2 ",
+    "name": "seledka999/yii2-oci8",
+    "description": "Oci8 Driver for Yii2 by Apa Oww",
     "version":"1.0.0",
     "keywords": ["yii", "oci8"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/apaoww/yii2-oci8/issues",
-        "source": "https://github.com/apaoww/yii2-oci8"
+        "issues": "https://github.com/seledka999/yii2-oci8/issues",
+        "source": "https://github.com/seledka999/yii2-oci8"
     },
     "authors": [
         {
